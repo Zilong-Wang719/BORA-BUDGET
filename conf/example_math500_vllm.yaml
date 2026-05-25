@@ -1,0 +1,33 @@
+task: math
+mode: eval
+random_seed: 17
+output_dir: artifacts
+
+data:
+  # Replace these with local public benchmark paths.
+  train_path: data/math_train.jsonl
+  dev_path: data/math_dev.jsonl
+  test_path: data/math_test.jsonl
+
+llm:
+  # Replace with a local Hugging Face model id or checkpoint path.
+  model_name: Qwen/Qwen3-8B
+  backend: vllm
+  trust_remote_code: true
+  local_files_only: false
+  dtype: bfloat16
+  max_context_tokens: 9216
+
+solver:
+  backend: vllm
+  model_name: Qwen/Qwen3-8B
+  prompt_template: auto
+  standard_cot_enable_thinking: false
+  standard_cot_max_new_tokens: 1024
+  temperature_think: 0.6
+  top_p: 0.95
+  budget_token_scope: completion
+
+logging:
+  save_state_jsonl: true
+  save_trace_text: true

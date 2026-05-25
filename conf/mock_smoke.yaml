@@ -1,0 +1,60 @@
+task: math
+mode: train
+random_seed: 7
+output_dir: artifacts
+
+data:
+  train_path: data/math_train.jsonl
+  dev_path: data/math_dev.jsonl
+  test_path: data/math_test.jsonl
+
+total_budget: 1024
+seed_rollout_tokens: 64
+max_active_branches: 3
+verify_topk: 2
+
+actions:
+  - STOP
+  - THINK_64
+  - THINK_192
+  - VERIFY
+  - BRANCH
+
+cost:
+  lambda_tok: 0.15
+  lambda_ver: 0.05
+  lambda_lat: 0.02
+  lat_norm_ms: 180.0
+
+bandit:
+  algo: lints
+  ts_scale: 0.5
+  lam: 1.0
+  min_decisions_before_stop: 1
+  stop_reward_baseline: 0.75
+
+proxy:
+  model: hgbt
+  max_depth: 3
+  learning_rate: 0.05
+  max_iter: 200
+  validation_split: 0.2
+  calibrate: true
+
+solver:
+  backend: mock
+  temperature_think: 0.7
+  temperature_branch: 1.0
+  top_p: 0.95
+  max_new_tokens_short: 64
+  max_new_tokens_long: 192
+  allow_gold_fallback: false
+
+verifier:
+  backend: mock
+  tokens_per_call: 64
+  allow_gold_fallback: false
+
+logging:
+  save_state_jsonl: true
+  save_trace_text: true

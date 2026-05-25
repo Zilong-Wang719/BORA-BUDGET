@@ -1,0 +1,4 @@
+method,mean_acc,avg_tokens,helpful,harmful
+College2400 GBDT top50 strict,61.6,3369.9919999999997,135,0
+College2400 Heuristic strict,63.0,3811.7953333333335,156,0
+College2400 Trace top50 strict,62.73333333333334,3635.361333333333,152,0

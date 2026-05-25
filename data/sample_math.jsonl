@@ -1,0 +1,10 @@
+{"qid":"math_0001","question":"What is 7 + 5?","answer":"12","difficulty":"easy"}
+{"qid":"math_0002","question":"What is 18 - 9 + 4?","answer":"13","difficulty":"easy"}
+{"qid":"math_0003","question":"What is 6 * 7?","answer":"42","difficulty":"easy"}
+{"qid":"math_0004","question":"What is (8 + 4) / 3?","answer":"4","difficulty":"medium"}
+{"qid":"math_0005","question":"What is 15 + 6 * 2?","answer":"27","difficulty":"medium"}
+{"qid":"math_0006","question":"What is (9 - 3) * (2 + 5)?","answer":"42","difficulty":"medium"}
+{"qid":"math_0007","question":"What is 144 / 12 + 3?","answer":"15","difficulty":"medium"}
+{"qid":"math_0008","question":"What is (5 + 7) * (9 - 4)?","answer":"60","difficulty":"hard"}
+{"qid":"math_0009","question":"What is (20 / 5) * (3 + 2)?","answer":"20","difficulty":"hard"}
+{"qid":"math_0010","question":"What is (11 + 1) * (8 - 3) - 6?","answer":"54","difficulty":"hard"}

@@ -1,0 +1,9 @@
+method,seed,count,correct,accuracy,avg_tokens,helpful,harmful,wrong_to_wrong,accept,think8,think12,think_rate,std_accuracy
+learned_multiarm_top30,17,500,315,0.63,2664.942,48,0,62,350,50,100,0.3,
+learned_multiarm_top30,7,500,309,0.618,2605.186,52,0,58,350,42,108,0.3,
+learned_multiarm_top30,23,500,310,0.62,2613.246,45,0,63,350,45,105,0.3,
+learned_multiarm_top30,mean,,,0.6226666666666666,2627.7913333333336,145,0,183,1050,137,313,,0.006429100507328643
+learned_multiarm_top50,17,500,321,0.642,3524.816,54,0,99,250,90,160,0.5,
+learned_multiarm_top50,7,500,318,0.636,3538.896,61,0,107,250,88,162,0.5,
+learned_multiarm_top50,23,500,313,0.626,3554.252,48,0,108,250,87,163,0.5,
+learned_multiarm_top50,mean,,,0.6346666666666666,3539.3213333333333,163,0,314,750,265,485,,0.008082903768654767
