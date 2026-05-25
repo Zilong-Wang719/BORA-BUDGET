@@ -16,7 +16,6 @@ logs, and user-specific paths.
 - `data/`: tiny sample JSONL files for smoke tests only.
 - `tests/`: unit tests for answer extraction, budget accounting, leakage, and
   controller scaffolding.
-- `paper/` and `figures/`: LaTeX source used to build the anonymous paper.
 - `artifacts/paper_tables/`: small table artifacts used for paper-facing
   summaries. Full model outputs are not included.
 
